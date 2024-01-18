@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "e8cbfb90-bd97-44b5-aab5-3466a40aec17",
+		"name": "Idea_Refinery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10996591"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8090/api/task/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/task/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"task",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/api/task/get/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/task/get/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"task",
+						"get",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/api/task/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"idearefinery part 2\",\n    \"description\": \"the second task\",\n    \"completed\": \"true\",\n    \"createdDate\": \"2023-03-12\",\n    \"completedDate\": \"2024-10-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/task/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"task",
+						"add"
+					]
+				},
+				"description": "Idea Refinery Coding assinment "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8090/api/task/update/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"idearefinery part 1\",\n    \"description\": \"the 1 task\",\n    \"completed\": \"true\",\n    \"createdDate\": \"2023-03-12\",\n    \"completedDate\": \"2024-10-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/task/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"task",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
